@@ -7,3 +7,18 @@ fp-info-cache
 *.kicad_prl
 gerber/
 gerber*
+
+
+# KiCad backups and locks
+_restore_backup_*
+*.bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+~*.lck
+
+# Manufacturing outputs (optional, if you don't track them in Git)
+*.csv
+*.zip
+*.pos
+*.gbr
+*.txt
