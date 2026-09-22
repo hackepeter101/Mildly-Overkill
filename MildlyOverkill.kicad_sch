@@ -14017,6 +14017,16 @@
 		)
 		(uuid "fe2200e6-02bf-4f29-84e4-19c33e0d7b98")
 	)
+	(label "shield"
+		(at 383.54 214.63 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8eb839ef-ee1c-4ef2-93e7-5d88f4a13c9b")
+	)
 	(global_label "ST"
 		(shape input)
 		(at 190.5 167.64 0)
@@ -24626,7 +24636,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 378.46 214.9348 0)
 			(hide yes)
 			(show_name no)
