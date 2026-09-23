@@ -278,7 +278,32 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|1600200|1574800|2a9262ee-d68d-4c10-a8e2-c992cf5fb890|9584ca43-4d4d-42fd-88c4-225f741c2ba0|/ba197d37-bb84-45f0-b17e-9a8f9468c5e4|/ba197d37-bb84-45f0-b17e-9a8f9468c5e4|/ba197d37-bb84-45f0-b17e-9a8f9468c5e4",
+        ""
+      ],
+      [
+        "power_pin_not_driven|1104900|1016000|404f368f-9669-407e-88c3-fa1d0d3cb182|00000000-0000-0000-0000-000000000000|/ba197d37-bb84-45f0-b17e-9a8f9468c5e4/ab0d58b2-ebc5-4abb-bacf-ecb3d594980e|/ba197d37-bb84-45f0-b17e-9a8f9468c5e4/ab0d58b2-ebc5-4abb-bacf-ecb3d594980e|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|1104900|1016000|404f368f-9669-407e-88c3-fa1d0d3cb182|00000000-0000-0000-0000-000000000000|/ba197d37-bb84-45f0-b17e-9a8f9468c5e4/df8d4c4e-6bdc-47ca-8eeb-167563374b06|/ba197d37-bb84-45f0-b17e-9a8f9468c5e4/df8d4c4e-6bdc-47ca-8eeb-167563374b06|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|1104900|1092200|0ce3e2b2-4757-48e3-9fa2-23ab4f0c57a5|00000000-0000-0000-0000-000000000000|/ba197d37-bb84-45f0-b17e-9a8f9468c5e4/ab0d58b2-ebc5-4abb-bacf-ecb3d594980e|/ba197d37-bb84-45f0-b17e-9a8f9468c5e4/ab0d58b2-ebc5-4abb-bacf-ecb3d594980e|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|1104900|1092200|0ce3e2b2-4757-48e3-9fa2-23ab4f0c57a5|00000000-0000-0000-0000-000000000000|/ba197d37-bb84-45f0-b17e-9a8f9468c5e4/df8d4c4e-6bdc-47ca-8eeb-167563374b06|/ba197d37-bb84-45f0-b17e-9a8f9468c5e4/df8d4c4e-6bdc-47ca-8eeb-167563374b06|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|3784600|2082800|b279fc2a-f6f4-4ea6-9088-0afb376f2f35|00000000-0000-0000-0000-000000000000|/ba197d37-bb84-45f0-b17e-9a8f9468c5e4|/ba197d37-bb84-45f0-b17e-9a8f9468c5e4|",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -679,7 +704,7 @@
         "uuid": "ba197d37-bb84-45f0-b17e-9a8f9468c5e4"
       }
     ],
-    "used_designators": "M1,H1-4,BOOT1,SW1-2,J1-2,D1-21,C1-25,RST1,JP1-4,R1-48,#PWR1-60,#PWR134,Q1-10,U1-5",
+    "used_designators": "#FLG2-3,#FLG6,Q1-10,#PWR1-60,#PWR111,#PWR134-139,JP1-4,RST1,C1-25,U1-5,U8-9,D1-21,J1-4,J9-10,SW1-2,BOOT1,H1-4,R1-48,M1",
     "variants": []
   },
   "sheets": [
@@ -688,20 +713,12 @@
       "MildlyOverkill"
     ],
     [
-      "4e346910-e1c8-4288-9491-bff2e4bf6b15",
-      "Power IO"
+      "ab0d58b2-ebc5-4abb-bacf-ecb3d594980e",
+      "H-Bridge"
     ],
     [
-      "82783cb4-a725-48ef-a2e8-a279ee13a444",
-      "Power IO1"
-    ],
-    [
-      "7b2574a4-52b7-4620-bd54-e90998bcae1b",
-      "Power IO2"
-    ],
-    [
-      "b73a77dd-66ff-4055-8c6f-e4517db4036b",
-      "Power IO3"
+      "df8d4c4e-6bdc-47ca-8eeb-167563374b06",
+      "H-Bridge1"
     ],
     [
       "525cc2e5-f0cc-4f38-904b-983912ba685d",
