@@ -2174,7 +2174,7 @@
 	)
 	(hierarchical_label "IO1"
 		(shape input)
-		(at 83.82 43.18 0)
+		(at 83.82 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2207,7 +2207,7 @@
 	)
 	(hierarchical_label "IO4"
 		(shape input)
-		(at 83.82 50.8 0)
+		(at 83.82 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2229,7 +2229,7 @@
 	)
 	(hierarchical_label "IO2"
 		(shape input)
-		(at 83.82 45.72 0)
+		(at 83.82 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2251,7 +2251,7 @@
 	)
 	(hierarchical_label "IN1"
 		(shape input)
-		(at 48.26 43.18 180)
+		(at 48.26 50.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2262,7 +2262,7 @@
 	)
 	(hierarchical_label "IN4"
 		(shape input)
-		(at 48.26 50.8 180)
+		(at 48.26 43.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2295,7 +2295,7 @@
 	)
 	(hierarchical_label "IN3"
 		(shape input)
-		(at 48.26 48.26 180)
+		(at 48.26 45.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2317,7 +2317,7 @@
 	)
 	(hierarchical_label "IN2"
 		(shape input)
-		(at 48.26 45.72 180)
+		(at 48.26 48.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2350,7 +2350,7 @@
 	)
 	(hierarchical_label "IO3"
 		(shape input)
-		(at 83.82 48.26 0)
+		(at 83.82 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
