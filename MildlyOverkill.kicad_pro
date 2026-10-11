@@ -130,6 +130,10 @@
           ""
         ],
         [
+          "silk_over_copper|144785714|75342914|deaf7e25-f351-4507-b5da-cd3328e0f439|dea2d973-be65-44ab-9be2-786a3cc9f484",
+          ""
+        ],
+        [
           "silk_over_copper|154325400|128335001|84cbf006-c48c-4e2d-961d-8fe85639396a|0ea61d40-0c27-48f0-aff1-7df505da3272",
           ""
         ],
@@ -159,6 +163,10 @@
         ],
         [
           "silk_overlap|102120903|123112709|54c9fa54-c87f-416c-9cc1-9f67e5142cf8|f8864da2-e45e-40d6-89ad-8427959b6308",
+          ""
+        ],
+        [
+          "silk_overlap|144261905|75227500|4467f88e-909f-4676-b309-036d39b3d289|deaf7e25-f351-4507-b5da-cd3328e0f439",
           ""
         ]
       ],
@@ -817,7 +825,7 @@
         "uuid": "ba197d37-bb84-45f0-b17e-9a8f9468c5e4"
       }
     ],
-    "used_designators": "#FLG2-3,#FLG6-7,#PWR1-60,#PWR85,#PWR95-101,#PWR111,#PWR134-139,JP1-4,RST1,R1-48,R57,R64-65,R67-68,M1,Q1-10,F1,U1-5,U8-9,D1-21,C1-25,SW1-2,J1-4,J7-11,H1-4,BOOT1",
+    "used_designators": "J1-4,J7-11,SW1-2,BOOT1,H1-4,#FLG2-3,#FLG6-7,#PWR1-60,#PWR85,#PWR95-101,#PWR111,#PWR134-139,JP1-4,RST1,R1-48,R57,R64-65,R67-68,M1,Q1-10,F1,U1-5,U8-9,D1-21,C1-25",
     "variants": []
   },
   "sheets": [

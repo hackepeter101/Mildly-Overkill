@@ -2053,16 +2053,6 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 66.04) (xy 115.57 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ab7f4fa-7093-45fe-94ce-e29898a7b84f")
-	)
-	(wire
-		(pts
 			(xy 107.95 60.96) (xy 115.57 60.96)
 		)
 		(stroke
@@ -2080,6 +2070,16 @@
 			(type default)
 		)
 		(uuid "9f161ff3-0152-4258-a830-712a29da2b69")
+	)
+	(wire
+		(pts
+			(xy 121.92 62.23) (xy 121.92 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a49aa76c-6fe0-473b-be02-085a9da513f3")
 	)
 	(wire
 		(pts
@@ -2150,6 +2150,16 @@
 			(type default)
 		)
 		(uuid "eb61ac16-d5f9-43f2-b0fe-83d364f7c297")
+	)
+	(wire
+		(pts
+			(xy 121.92 63.5) (xy 115.57 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f826c8a1-ca25-4ebd-9caa-6a4100e48d90")
 	)
 	(wire
 		(pts
@@ -2767,7 +2777,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 115.57 69.85 180)
+		(at 121.92 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2778,29 +2788,29 @@
 		(fields_autoplaced yes)
 		(uuid "192bf878-d393-4084-8f78-8f8b0bbe650d")
 		(property "Reference" "R63"
-			(at 118.11 68.5799 0)
+			(at 124.46 57.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "10K"
-			(at 118.11 71.1199 0)
+			(at 124.46 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 117.348 69.85 90)
+			(at 120.142 58.42 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2811,7 +2821,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 69.85 0)
+			(at 121.92 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2822,7 +2832,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 115.57 69.85 0)
+			(at 121.92 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3083,6 +3093,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 121.92 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f0ab044-331a-44e7-bdd5-00f52b3bedb9")
+		(property "Reference" "#PWR02"
+			(at 121.92 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 121.92 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 121.92 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "42b35595-1785-45c3-9d07-2b36952b2a8d")
+		)
+		(instances
+			(project "MildlyOverkill"
+				(path "/ba197d37-bb84-45f0-b17e-9a8f9468c5e4/525cc2e5-f0cc-4f38-904b-983912ba685d"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 153.67 78.74 270)
 		(unit 1)
@@ -3234,84 +3322,6 @@
 			(project "MildlyOverkill"
 				(path "/ba197d37-bb84-45f0-b17e-9a8f9468c5e4/525cc2e5-f0cc-4f38-904b-983912ba685d"
 					(reference "#PWR058")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 115.57 73.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5be4cabc-aa61-45ff-9ba2-7081235e1cec")
-		(property "Reference" "#PWR093"
-			(at 115.57 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 115.57 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 115.57 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 115.57 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 115.57 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "512613ab-3179-4574-b12e-be28dc8d0b21")
-		)
-		(instances
-			(project "MildlyOverkill"
-				(path "/ba197d37-bb84-45f0-b17e-9a8f9468c5e4/525cc2e5-f0cc-4f38-904b-983912ba685d"
-					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -3591,7 +3601,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 168.91 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -3992,7 +4002,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 168.91 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -4791,7 +4801,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 168.91 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -5033,7 +5043,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 168.91 114.3 0)
 			(hide yes)
 			(show_name no)
