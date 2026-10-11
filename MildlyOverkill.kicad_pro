@@ -61,7 +61,7 @@
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
           "min_clearance": 0.25,
-          "min_island_area": 0.0013161349,
+          "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
           "remove_islands": 0,
@@ -86,7 +86,15 @@
           ""
         ],
         [
+          "lib_footprint_mismatch|156000000|130835001|cad18fbc-fb7a-4580-b348-05d59ca2b325|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
           "lib_footprint_mismatch|158632500|120635000|7c4d05c5-ccbd-4b66-850d-785726a05323|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "malformed_courtyard|156000000|130635001|cad18fbc-fb7a-4580-b348-05d59ca2b325|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -122,6 +130,14 @@
           ""
         ],
         [
+          "silk_over_copper|154325400|128335001|84cbf006-c48c-4e2d-961d-8fe85639396a|0ea61d40-0c27-48f0-aff1-7df505da3272",
+          ""
+        ],
+        [
+          "silk_over_copper|154500000|133335001|4e1d46c8-1b8d-4586-9c51-d76176dcaa2b|0ea61d40-0c27-48f0-aff1-7df505da3272",
+          ""
+        ],
+        [
           "silk_over_copper|156957900|118135000|3b981d96-b481-4b9d-bd46-2656842462f3|b1d85b07-e654-4c9f-a3d1-933f34f6b2c0",
           ""
         ],
@@ -130,23 +146,19 @@
           ""
         ],
         [
-          "starved_thermal|103045000|82750000|ad2dec46-a6b4-4bb6-ab01-bb6d140ce36f|32b28492-71a4-4ae6-831d-a5659aeb2ff3|F.Cu",
+          "silk_overlap|102119901|128109704|2371edec-6ea3-4cc1-a3f3-3e6865ec8d51|54c9fa54-c87f-416c-9cc1-9f67e5142cf8",
           ""
         ],
         [
-          "starved_thermal|103045000|82750000|ad2dec46-a6b4-4bb6-ab01-bb6d140ce36f|80872321-e7c1-42b9-aade-9ec152cca307|F.Cu",
+          "silk_overlap|102119901|130609704|54c9fa54-c87f-416c-9cc1-9f67e5142cf8|6cacbab5-665e-4833-9df7-f7fc6d5ba505",
           ""
         ],
         [
-          "starved_thermal|103045000|89250000|ad2dec46-a6b4-4bb6-ab01-bb6d140ce36f|0a23aa22-66b9-48f1-9761-80085d663057|F.Cu",
+          "silk_overlap|102120235|125610706|54c9fa54-c87f-416c-9cc1-9f67e5142cf8|62cbd72a-dfc3-40d9-9b45-7bc0404ad820",
           ""
         ],
         [
-          "starved_thermal|103045000|89250000|ad2dec46-a6b4-4bb6-ab01-bb6d140ce36f|d5ffbaf8-5283-4f49-b75b-eda5117256b5|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|155782501|122260001|ad2dec46-a6b4-4bb6-ab01-bb6d140ce36f|b88b4826-0ca2-435d-bf53-270604bf34ef|F.Cu",
+          "silk_overlap|102120903|123112709|54c9fa54-c87f-416c-9cc1-9f67e5142cf8|f8864da2-e45e-40d6-89ad-8427959b6308",
           ""
         ]
       ],
@@ -805,7 +817,7 @@
         "uuid": "ba197d37-bb84-45f0-b17e-9a8f9468c5e4"
       }
     ],
-    "used_designators": "M1,R1-48,R57,R64-65,R67-68,Q1-10,F1,U1-5,U8-9,D1-21,C1-25,SW1-2,J1-4,J7-11,H1-4,BOOT1,#PWR1-60,#PWR85,#PWR95-101,#PWR111,#PWR134-139,#FLG2-3,#FLG6-7,RST1,JP1-4",
+    "used_designators": "#FLG2-3,#FLG6-7,#PWR1-60,#PWR85,#PWR95-101,#PWR111,#PWR134-139,JP1-4,RST1,R1-48,R57,R64-65,R67-68,M1,Q1-10,F1,U1-5,U8-9,D1-21,C1-25,SW1-2,J1-4,J7-11,H1-4,BOOT1",
     "variants": []
   },
   "sheets": [
