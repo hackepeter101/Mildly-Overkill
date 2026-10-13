@@ -12576,7 +12576,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10k 1%"
 			(at 262.89 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12742,7 +12742,7 @@
 				)
 			)
 		)
-		(property "Value" "LD1117S33TR_SOT223"
+		(property "Value" "AP7361C-33ER-13"
 			(at 218.44 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13306,7 +13306,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SMAJ33A"
+		(property "Value" "SMAJ24CA"
 			(at 40.64 43.1799 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13830,7 +13830,7 @@
 				)
 			)
 		)
-		(property "Value" "Fuse"
+		(property "Value" "10A"
 			(at 33.02 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14238,7 +14238,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "1uF 10V"
 			(at 219.71 102.8699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14963,7 +14963,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF"
+		(property "Value" "22uF 10V X5R"
 			(at 275.59 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16248,7 +16248,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1000uF"
+		(property "Value" "1000uF 35V"
 			(at 80.01 42.2909 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16498,7 +16498,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100nF 50V"
 			(at 110.49 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17462,7 +17462,7 @@
 				)
 			)
 		)
-		(property "Value" "5,1K"
+		(property "Value" "5.1k"
 			(at 351.79 55.118 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18920,7 +18920,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10uF 10V X5R"
 			(at 175.26 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19560,7 +19560,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10uF 50V"
 			(at 97.79 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20120,7 +20120,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Thermistor_NTC"
+		(property "Value" "NCP18XH103F03RB"
 			(at 262.89 103.1874 0)
 			(hide yes)
 			(show_name no)
@@ -20362,7 +20362,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5,1K"
+		(property "Value" "10k"
 			(at 218.44 91.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22156,7 +22156,7 @@
 				)
 			)
 		)
-		(property "Value" "5,1K"
+		(property "Value" "5.1k"
 			(at 351.79 46.736 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22802,7 +22802,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "400"
+		(property "Value" "402"
 			(at 184.15 95.2499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23202,7 +23202,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "47uF"
+		(property "Value" "47uF 10V X5R"
 			(at 160.02 52.0699 0)
 			(show_name no)
 			(do_not_autoplace no)

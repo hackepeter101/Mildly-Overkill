@@ -3793,7 +3793,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "0.1uF 50V"
 			(at 43.688 76.454 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4598,7 +4598,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.022uF"
+		(property "Value" "0.022uF 50V"
 			(at 116.84 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4684,7 +4684,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "660"
+		(property "Value" "665"
 			(at 57.15 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4768,7 +4768,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "0.1uF 50V"
 			(at 65.786 85.598 90)
 			(show_name no)
 			(do_not_autoplace no)
