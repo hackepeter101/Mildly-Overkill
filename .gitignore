@@ -22,3 +22,6 @@ _restore_backup_*
 *.pos
 *.gbr
 *.txt
+
+# Claude Code guidance file
+CLAUDE.md
