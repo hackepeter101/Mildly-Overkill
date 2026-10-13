@@ -20,10 +20,11 @@
       - Datasheet: https://www.diodes.com/assets/Datasheets/AP7361C.pdf (pin table on p.2)
 - [x] Layout: merge the 3.3 V via-field triangle into the GND pour (better cooling), give pin 3 vias to the In2 3.3 V plane, keep C20 close to pin 3 and C17 close to pin 1
 - [x] Fix the U3 symbol description ("800mA" is left over from the LD1117; the AP7361C is 1 A)
+- [ ] Layout: only 3 GND vias near the U3 tab (checked 2026-10-13). The tab is the heatsink now → add **6–9 GND vias (0.3 mm)** in/around the tab, solid connection
 
 ## 🔍 Before ordering
-- [ ] Run ERC + DRC. ERC 2026-10-13: 1 error + 3 warnings, all harmless but worth silencing:
-  - [ ] **+5V "power pin not driven"** (#PWR032, root sheet): add a **PWR_FLAG** on +5V (the buck output goes through L1, so ERC sees no driver)
+- [ ] Run ERC + DRC. Status at end of 2026-10-13: ERC 0 errors + 3 warnings; DRC 22 (silkscreen/courtyard/lib mismatch only), 0 unconnected pads
+  - [x] **+5V "power pin not driven"** (#PWR032, root sheet): add a **PWR_FLAG** on +5V (the buck output goes through L1, so ERC sees no driver)
   - [ ] U4 lib `TPS4H160AQPWPRQ1` not in the symbol lib table (absolute path outside the repo) → copy the symbol into a project lib
   - [ ] U4 hidden pins VS/EXP merge with VIN/GND → expected, ignore or rename the label to VS
 - [ ] Check Q1 pads match the AOD4185 (G=1, D=tab, S=3)
