@@ -2,24 +2,24 @@
 
 
 ## 🆕 Footprint mismatches found in this netlist
-- [ ] **D3 (BZT52C15):** BZT52 is **SOD-123**, footprint is 0805
+- [x] **D3 (BZT52C15):** BZT52 is **SOD-123**, footprint is 0805
       → use BZT52C15-SOD123 footprint, or switch the part to **BZT52C15S** (SOD-323)
-- [ ] **D5 (B5819W):** B5819W is **SOD-123**, footprint is SOD-323
+- [x] **D5 (B5819W):** B5819W is **SOD-123**, footprint is SOD-323
       → change footprint to SOD-123, or switch the part to **B5819WS** (SOD-323)
 
 ## 🟠 Small layout additions (if there's room)
-- [ ] **10 µF / 50 V (1206/1210)** at each DRV8874 VM pin (U8, U9); TI recommends bulk + 0.1 µF
-- [ ] **100 nF + 1 µF / 50 V** close to U4 VS pins (TPS4H160)
-- [ ] **2× 4.7k I2C pull-ups** SDA/SCL → 3.3 V (behind a solder jumper ideally)
-- [ ] **1–4.7 µF** on VBUS after FB1
-- [ ] (optional) 100–330 Ω series resistors on J10/J11 GPIOs
+- [x] **10 µF / 50 V (1206/1210)** at each DRV8874 VM pin (U8, U9); TI recommends bulk + 0.1 µF
+- [x] **100 nF + 1 µF / 50 V** close to U4 VS pins (TPS4H160)
+- [x] **2× 4.7k I2C pull-ups** SDA/SCL → 3.3 V (behind a solder jumper ideally)
+- [x] **1–4.7 µF** on VBUS after FB1
+- [x] (optional) 100–330 Ω series resistors on J10/J11 GPIOs (nope - i am the only one to hook anything up to there)
 
 ## 🔁 U3 LDO: switch to the GND-tab version (decided 2026-10-13)
-- [ ] **U3: AP7361C-33ER-13 → AP7361C-33E-13** (same SOT-223 footprint, tab = GND)
+- [x] **U3: AP7361C-33ER-13 → AP7361C-33E-13** (same SOT-223 footprint, tab = GND)
       - New pinout: **1 = IN (+5V), 2/tab = GND, 3 = OUT (+3.3V)**. Remap the symbol pins in the schematic.
       - Datasheet: https://www.diodes.com/assets/Datasheets/AP7361C.pdf (pin table on p.2)
-- [ ] Layout: merge the 3.3 V via-field triangle into the GND pour (better cooling), give pin 3 vias to the In2 3.3 V plane, keep C20 close to pin 3 and C17 close to pin 1
-- [ ] Fix the U3 symbol description ("800mA" is left over from the LD1117; the AP7361C is 1 A)
+- [x] Layout: merge the 3.3 V via-field triangle into the GND pour (better cooling), give pin 3 vias to the In2 3.3 V plane, keep C20 close to pin 3 and C17 close to pin 1
+- [x] Fix the U3 symbol description ("800mA" is left over from the LD1117; the AP7361C is 1 A)
 
 ## 🔍 Before ordering
 - [ ] Run ERC + DRC. ERC 2026-10-13: 1 error + 3 warnings, all harmless but worth silencing:

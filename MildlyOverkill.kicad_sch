@@ -6534,7 +6534,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:LD1117S33TR_SOT223"
+		(symbol "Regulator_Linear:AP7361C-33E"
+			(pin_names
+				(offset 0.254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -6550,7 +6553,7 @@
 					)
 				)
 			)
-			(property "Value" "LD1117S33TR_SOT223"
+			(property "Value" "AP7361C-33E"
 				(at 0 3.175 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6562,7 +6565,19 @@
 				)
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-				(at 0 5.08 0)
+				(at 0 5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP7361C.pdf"
+				(at 0 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6572,18 +6587,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf"
-				(at 2.54 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223"
+			(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6594,7 +6598,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "REGULATOR LDO 3.3V"
+			(property "ki_keywords" "linear regulator ldo fixed positive"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6605,7 +6609,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOT?223*TabPin2*"
+			(property "ki_fp_filters" "SOT?223*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6616,7 +6620,7 @@
 					)
 				)
 			)
-			(symbol "LD1117S33TR_SOT223_0_1"
+			(symbol "AP7361C-33E_0_1"
 				(rectangle
 					(start -5.08 -5.08)
 					(end 5.08 1.905)
@@ -6629,11 +6633,11 @@
 					)
 				)
 			)
-			(symbol "LD1117S33TR_SOT223_1_1"
+			(symbol "AP7361C-33E_1_1"
 				(pin power_in line
-					(at 0 -7.62 90)
+					(at -7.62 0 0)
 					(length 2.54)
-					(name "GND"
+					(name "VI"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6648,10 +6652,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 7.62 0 180)
+				(pin power_in line
+					(at 0 -7.62 90)
 					(length 2.54)
-					(name "VO"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6666,10 +6670,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -7.62 0 0)
+				(pin power_out line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "VI"
+					(name "VO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8164,7 +8168,7 @@
 	)
 	(rectangle
 		(start 252.73 80.01)
-		(end 267.97 113.03)
+		(end 293.37 113.03)
 		(stroke
 			(width 0)
 			(type solid)
@@ -8212,7 +8216,7 @@
 	)
 	(rectangle
 		(start 361.95 20.32)
-		(end 403.86 49.53)
+		(end 403.86 100.33)
 		(stroke
 			(width 0)
 			(type default)
@@ -8517,6 +8521,12 @@
 		(uuid "76737c05-6707-4815-b54e-f908712a3ff3")
 	)
 	(junction
+		(at 339.09 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d86bdec-eac5-4c62-8c51-e7d593878b80")
+	)
+	(junction
 		(at 49.53 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8716,6 +8726,16 @@
 	)
 	(wire
 		(pts
+			(xy 347.98 35.56) (xy 347.98 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "053f0edc-1a21-4369-a02a-f8d7a6b05fb5")
+	)
+	(wire
+		(pts
 			(xy 93.98 53.34) (xy 93.98 60.96)
 		)
 		(stroke
@@ -8726,7 +8746,7 @@
 	)
 	(wire
 		(pts
-			(xy 330.2 49.53) (xy 330.2 44.45)
+			(xy 330.2 49.53) (xy 330.2 30.48)
 		)
 		(stroke
 			(width 0)
@@ -9123,16 +9143,6 @@
 			(type default)
 		)
 		(uuid "48f47c76-0c6a-4afa-8982-40858f9ec911")
-	)
-	(wire
-		(pts
-			(xy 340.36 36.83) (xy 340.36 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "494a24a4-1a19-4d43-9320-130afa9baaff")
 	)
 	(wire
 		(pts
@@ -9596,6 +9606,16 @@
 	)
 	(wire
 		(pts
+			(xy 339.09 35.56) (xy 339.09 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a59021e8-0f60-4d5d-be5b-68dbab090bd8")
+	)
+	(wire
+		(pts
 			(xy 156.21 54.61) (xy 156.21 59.69)
 		)
 		(stroke
@@ -10006,13 +10026,23 @@
 	)
 	(wire
 		(pts
-			(xy 330.2 44.45) (xy 332.74 44.45)
+			(xy 330.2 30.48) (xy 331.47 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f3282727-0cb8-41c7-9a90-d0078b7bffe6")
+	)
+	(wire
+		(pts
+			(xy 347.98 35.56) (xy 339.09 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5a4a460-eb58-4cad-a436-fe7736657ed2")
 	)
 	(wire
 		(pts
@@ -10389,7 +10419,32 @@
 		)
 		(uuid "2053ed65-1522-4c43-a59e-dc55fa6718af")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 372.7007 34.29 0)
+			(at 373.1767 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
+		(at 367.03 57.15 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "20b18d1a-fc0c-422d-906b-deb84491bba9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 367.03 63.6428 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12205,6 +12260,31 @@
 			)
 		)
 	)
+	(global_label "SDA"
+		(shape input)
+		(at 375.92 57.15 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "e9ce0acd-f937-4578-a35f-17b35fad4ef1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 375.92 63.7033 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "MISO"
 		(shape input)
 		(at 118.11 194.31 0)
@@ -12394,6 +12474,87 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 339.09 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "002ec298-ab8c-4ab7-addb-1a6e93d342c3")
+		(property "Reference" "C25"
+			(at 342.9 38.0999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2uF"
+			(at 346.71 39.9918 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 340.0552 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 339.09 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 339.09 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "436ff64b-ad09-438e-9f38-f547891c53a6")
+		)
+		(pin "2"
+			(uuid "e6f0daf1-c45d-4220-9ea0-fb29a710eed2")
+		)
+		(instances
+			(project "MildlyOverkill"
+				(path "/ba197d37-bb84-45f0-b17e-9a8f9468c5e4"
+					(reference "C25")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -12716,88 +12877,6 @@
 			(project "MildlyOverkill"
 				(path "/ba197d37-bb84-45f0-b17e-9a8f9468c5e4"
 					(reference "J9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:LD1117S33TR_SOT223")
-		(at 218.44 43.18 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0c32e42b-cabc-4416-a94d-0793f9efed8e")
-		(property "Reference" "U3"
-			(at 218.44 36.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AP7361C-33ER-13"
-			(at 218.44 39.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 218.44 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf"
-			(at 220.98 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223"
-			(at 218.44 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "93170290-9631-4fa6-a618-036d5e9fc18e")
-		)
-		(pin "1"
-			(uuid "523f1fab-eee5-4765-88ad-5cb79cba95ec")
-		)
-		(pin "2"
-			(uuid "b8344ac9-dc65-4bad-8b7f-8b88ada004ba")
-		)
-		(instances
-			(project "MildlyOverkill"
-				(path "/ba197d37-bb84-45f0-b17e-9a8f9468c5e4"
-					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -13278,6 +13357,84 @@
 			(project "MildlyOverkill"
 				(path "/ba197d37-bb84-45f0-b17e-9a8f9468c5e4"
 					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 375.92 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0fd8a5e1-4f53-4236-8029-6d5d9fa952e4")
+		(property "Reference" "#PWR064"
+			(at 375.92 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 375.92 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 375.92 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 375.92 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 375.92 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "76872bb5-2965-447f-98ef-554666e6236a")
+		)
+		(instances
+			(project "MildlyOverkill"
+				(path "/ba197d37-bb84-45f0-b17e-9a8f9468c5e4"
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -14611,6 +14768,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 375.92 53.34 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23cc39c1-4119-40f8-a81b-6fdd232bdf7a")
+		(property "Reference" "R21"
+			(at 378.46 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 378.46 54.6099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 377.698 53.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 375.92 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 375.92 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9c09de9f-0cdf-408a-be1c-973c61cfb540")
+		)
+		(pin "2"
+			(uuid "fd5e2ed9-8634-473d-b7d1-71079cbd2db3")
+		)
+		(instances
+			(project "MildlyOverkill"
+				(path "/ba197d37-bb84-45f0-b17e-9a8f9468c5e4"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x07_Pin")
 		(at 87.63 191.77 0)
 		(unit 1)
@@ -14863,6 +15102,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 367.03 53.34 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ec6e269-2ea4-422b-93db-a5face4b5fa7")
+		(property "Reference" "R20"
+			(at 369.57 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 369.57 54.6099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 368.808 53.34 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 367.03 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 367.03 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4a7a3e78-c324-4884-9b1b-acaa4d7136d7")
+		)
+		(pin "2"
+			(uuid "35ca911a-48c3-4ee7-9e01-3f46c373385d")
+		)
+		(instances
+			(project "MildlyOverkill"
+				(path "/ba197d37-bb84-45f0-b17e-9a8f9468c5e4"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 215.9 86.36 0)
 		(unit 1)
@@ -14950,7 +15271,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "30e27fbf-18ed-44b5-82bc-93e3904243a5")
 		(property "Reference" "C20"
 			(at 275.59 133.3499 0)
@@ -14964,7 +15284,7 @@
 			)
 		)
 		(property "Value" "22uF 10V X5R"
-			(at 275.59 135.8899 0)
+			(at 266.954 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15814,6 +16134,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 339.09 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f8c6fe7-a9ef-40b5-8a2e-8bace8947b86")
+		(property "Reference" "#PWR056"
+			(at 339.09 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 339.09 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 339.09 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 339.09 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 339.09 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1ae6d119-5479-4e46-a434-c9208b915cf8")
+		)
+		(instances
+			(project "MildlyOverkill"
+				(path "/ba197d37-bb84-45f0-b17e-9a8f9468c5e4"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 177.8 133.35 0)
 		(unit 1)
@@ -15890,6 +16288,84 @@
 			(project "MildlyOverkill"
 				(path "/ba197d37-bb84-45f0-b17e-9a8f9468c5e4"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 367.03 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44b5cea0-e82d-4384-9052-273f40d1a4ad")
+		(property "Reference" "#PWR057"
+			(at 367.03 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 367.03 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 367.03 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 367.03 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 367.03 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8f06262d-1fc5-472a-95e0-f397a1bb694e")
+		)
+		(instances
+			(project "MildlyOverkill"
+				(path "/ba197d37-bb84-45f0-b17e-9a8f9468c5e4"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -17758,6 +18234,90 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:AP7361C-33E")
+		(at 218.44 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6dc5a3f1-6128-45be-a414-f687c19761af")
+		(property "Reference" "U3"
+			(at 218.44 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AP7361C-33E"
+			(at 218.44 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 218.44 37.465 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP7361C.pdf"
+			(at 218.44 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+			(at 218.44 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f0e4d595-eedd-467a-922d-d19d80a47230")
+		)
+		(pin "1"
+			(uuid "cb883153-14ef-406d-b873-d125068df780")
+		)
+		(pin "3"
+			(uuid "98512527-b201-4304-a4dc-23bbeea04a18")
+		)
+		(instances
+			(project "MildlyOverkill"
+				(path "/ba197d37-bb84-45f0-b17e-9a8f9468c5e4"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 171.45 36.83 0)
 		(unit 1)
@@ -18004,6 +18564,85 @@
 			(project "MildlyOverkill"
 				(path "/ba197d37-bb84-45f0-b17e-9a8f9468c5e4"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 201.93 43.18 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "757ffd4d-4d09-432c-9111-41831aa3798c")
+		(property "Reference" "#FLG08"
+			(at 200.025 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 196.85 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm"
+			(at 201.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 201.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "68add50f-b742-4270-a4be-9d1c56b52964")
+		)
+		(instances
+			(project "MildlyOverkill"
+				(path "/ba197d37-bb84-45f0-b17e-9a8f9468c5e4"
+					(reference "#FLG08")
 					(unit 1)
 				)
 			)
@@ -18455,7 +19094,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 68.58 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -19459,7 +20098,7 @@
 	)
 	(symbol
 		(lib_id "Device:FerriteBead")
-		(at 336.55 44.45 90)
+		(at 335.28 30.48 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19470,7 +20109,7 @@
 		(fields_autoplaced yes)
 		(uuid "a0c550dd-d7bd-49da-907d-7344867cd7b8")
 		(property "Reference" "FB1"
-			(at 336.4992 36.83 90)
+			(at 335.2292 22.86 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19480,7 +20119,7 @@
 			)
 		)
 		(property "Value" "BLM21PG221SN1"
-			(at 336.4992 39.37 90)
+			(at 335.2292 25.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19490,7 +20129,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 336.55 46.228 90)
+			(at 335.28 32.258 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19501,7 +20140,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 336.55 44.45 0)
+			(at 335.28 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19512,7 +20151,7 @@
 			)
 		)
 		(property "Description" "Ferrite bead"
-			(at 336.55 44.45 0)
+			(at 335.28 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23024,7 +23663,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 340.36 29.21 0)
+		(at 347.98 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23035,7 +23674,7 @@
 		(fields_autoplaced yes)
 		(uuid "e6e2d06e-73cd-40c3-8e4f-b1cdb83b75ac")
 		(property "Reference" "#PWR041"
-			(at 340.36 33.02 0)
+			(at 347.98 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23046,7 +23685,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 340.36 24.13 0)
+			(at 347.98 21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23056,7 +23695,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 340.36 29.21 0)
+			(at 347.98 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23067,7 +23706,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 340.36 29.21 0)
+			(at 347.98 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23078,7 +23717,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 340.36 29.21 0)
+			(at 347.98 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23189,7 +23828,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e9bb1507-cc50-413e-8b22-66c2c1ddb07e")
 		(property "Reference" "C11"
 			(at 160.02 49.5299 0)
@@ -23203,7 +23841,7 @@
 			)
 		)
 		(property "Value" "47uF 10V X5R"
-			(at 160.02 52.0699 0)
+			(at 150.114 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23339,7 +23977,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 340.36 33.02 270)
+		(at 347.98 30.48 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23350,7 +23988,7 @@
 		(fields_autoplaced yes)
 		(uuid "ebd0268a-fc0f-4e98-970c-70ecffd5ec6b")
 		(property "Reference" "D5"
-			(at 342.9 31.4324 90)
+			(at 350.52 28.8924 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23361,7 +23999,7 @@
 			)
 		)
 		(property "Value" "B5819W"
-			(at 342.9 33.9724 90)
+			(at 350.52 31.4324 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23371,8 +24009,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 340.36 33.02 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 347.98 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23383,7 +24021,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 340.36 33.02 0)
+			(at 347.98 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23394,7 +24032,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 340.36 33.02 0)
+			(at 347.98 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
