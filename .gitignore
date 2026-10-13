@@ -25,3 +25,6 @@ _restore_backup_*
 
 # Claude Code guidance file
 CLAUDE.md
+
+# Generated exports
+exports/
