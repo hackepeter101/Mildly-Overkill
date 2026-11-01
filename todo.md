@@ -20,19 +20,31 @@
       - Datasheet: https://www.diodes.com/assets/Datasheets/AP7361C.pdf (pin table on p.2)
 - [x] Layout: merge the 3.3 V via-field triangle into the GND pour (better cooling), give pin 3 vias to the In2 3.3 V plane, keep C20 close to pin 3 and C17 close to pin 1
 - [x] Fix the U3 symbol description ("800mA" is left over from the LD1117; the AP7361C is 1 A)
-- [ ] Layout: only 3 GND vias near the U3 tab (checked 2026-10-13). The tab is the heatsink now → add **6–9 GND vias (0.3 mm)** in/around the tab, solid connection
+- [x] Layout: only 3 GND vias near the U3 tab (user: fine as is, 2026-10-20) (checked 2026-10-13). The tab is the heatsink now → add **6–9 GND vias (0.3 mm)** in/around the tab, solid connection
 
 ## 🔍 Before ordering
 - [ ] Run ERC + DRC. Status at end of 2026-10-13: ERC 0 errors + 3 warnings; DRC 22 (silkscreen/courtyard/lib mismatch only), 0 unconnected pads
   - [x] **+5V "power pin not driven"** (#PWR032, root sheet): add a **PWR_FLAG** on +5V (the buck output goes through L1, so ERC sees no driver)
   - [ ] U4 lib `TPS4H160AQPWPRQ1` not in the symbol lib table (absolute path outside the repo) → copy the symbol into a project lib
   - [ ] U4 hidden pins VS/EXP merge with VIN/GND → expected, ignore or rename the label to VS
-- [ ] Check Q1 pads match the AOD4185 (G=1, D=tab, S=3)
-- [ ] Check the SMAJ24CA symbol (bidirectional, so orientation doesn't matter)
-- [ ] Check L1 Isat ≥ 2.5 A for the exact WE-XHMI part number
-- [ ] Re-export the BOM and spot-check that every part has a real MPN
+- [x] Check Q1 pads match the AOD4185 (G=1, D=tab, S=3) — verified 2026-10-20
+- [x] Check the SMAJ24CA symbol (bidirectional, so orientation doesn't matter) — description still says "unidirectional 33V" (cosmetic)
+- [x] Check L1 Isat ≥ 2.5 A for the exact WE-XHMI part number — 74439324033 (4030, 3.3 µH, Isat 8.2 A, TI WEBENCH pick)
+- [x] Re-export the BOM and spot-check that every part has a real MPN — `bom/mouser_bom.csv` (2026-10-20)
+- [ ] TH1: NCP18XH103F03RB is **0603**, footprint is 0805 → footprint to 0603, or use the 0805 NCP21 variant
+- [ ] Value casing: R6/R7/R56/R63 "10K", R51 "1K", R40/R49/R50/R55/R57 "…K" → lowercase k (BOM groups them separately)
 
 ---
+
+## 🛒 Order (2026-11-01: JLC 5 PCBs, 3 assembled)
+- [x] Hand-solder TH1 (0603 on the 0805 pads) instead of changing the footprint
+- [x] Left out of the JLC BOM/CPL, hand-soldered: **L1, U3, U4, U5, TH1, BOOT1/RST1**, plus the THT parts
+- [x] U3: AP7361C-33E-13 unavailable → **MCP1826S-3302E/DB** (same SOT-223-3 pinout, tab = GND). Update the schematic for the next rev
+- [x] U6: JLC placement needs **-90°** in the CPL (footprint rotation 0° shows it rotated)
+- [x] Check part rotation / pin 1 in the JLC placement preview
+- [x] Digi-Key order list checked (U4 backordered, expected 2026-11-02)
+- [ ] Buy Phoenix terminals (15× 1725672, 3× 1757242, 3× 1757019) and solder paste
+- [ ] Commit + tag `v0.1` on the exact state that gets ordered
 
 ## ⚪ Skipped on purpose
 - FAULT pins → no free GPIO; DRV8874 auto-retries on faults; watch IPROPI + NTC instead

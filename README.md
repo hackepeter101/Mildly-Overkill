@@ -20,7 +20,7 @@
 - Physical Boot and Reset buttons
 
 ## Why
-I have a project I need this for. I also did something similar for my day job and, to be honest, I wasn't entirely satisfied with my own work there—so this is my chance to improve on it.
+I have a project I need this for. I've built boards like this before and was never fully happy with how they turned out, so this is my chance to do it properly.
 
 ## Disclaimer: AI use
 Every trace, every footprint and every questionable part choice on this board is mine. I placed and routed it all by hand. AI didn't draw a single line of copper. What I *am* doing is testing whether AI is any good at spotting my mistakes before a fab house turns them into expensive coasters.
